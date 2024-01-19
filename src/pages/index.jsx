@@ -40,8 +40,8 @@ export default function Home() {
         { larguraDaTela > 915 ? <Nav/> : <MobileButton setActive={setActive} active={active}/> }   
       </Header>
 
-      {active && <MobileMenu setActive={setActive} active={active}/>}
-
+      { larguraDaTela < 915 && <MobileMenu setActive={setActive} active={active}/> }
+      
       <Section id="about" color="#1b1b1b" height={larguraDaTela > 915 ? "100vh" : null}>
         <div className={styles.containerAbout}>
           <Image alt="" className={styles.img} width={300} height={300} src="/img/foto.jpg" priority/>
@@ -50,12 +50,36 @@ export default function Home() {
             <h2 className={styles.colorWhite}>THIAGO SILVA RODRIGUES</h2>
             <h2 className={styles.colorBlue}>DESENVOLVEDOR WEB</h2>
             <p>Sou amante da área da tecnologia e este é meu portifólio com 
-              alguns mini projetos que desenvolvi, sou formando em faculdade 
-              de análise e desenvolvimento de sistemas, estou sempre buscando evoluir na área e 
+              alguns mini projetos que desenvolvi, me formei recentemente em análise e desenvolvimento de sistemas, estou sempre buscando evoluir na área e 
               tenho disposição para aprender e seguir aprimorando meus conhecimentos, 
               atualmente com foco no desenvolvimento web e estou à procura de uma oportunidade.
             </p>
           </div>
+
+        </div>
+      </Section>
+
+      <Section color="black">
+        <div className={styles.containerEdu}>
+          <h2>Formação</h2>
+          <br />
+          <ul>
+            <li>
+            <Image alt="" width={100} height={100} src={"/img/internet.png"}></Image>
+              <p><strong>Informática para Internet</strong></p>
+              <p>Curso Técnico</p>
+              <p>C.E.E.P. José Figueireiro Barreto</p>
+              <p>Ano de Conclusão: 2022</p>
+            </li>
+
+            <li>
+              <Image alt="" width={100} height={100} src={"/img/computer.png"}></Image>
+              <p><strong>Análise e Desenvolvimeto de Sistemas</strong></p>  
+              <p>Curso Superior</p>
+              <p>Instituto Federal de Sergipe</p>
+              <p>Ano de Conclusão: 2024</p>
+            </li>
+          </ul>
         </div>
       </Section>
 

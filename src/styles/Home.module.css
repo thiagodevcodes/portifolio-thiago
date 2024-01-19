@@ -94,6 +94,39 @@
   margin: 5px;
 }
 
+.containerEdu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.containerEdu li {
+  list-style-type: none;
+  background-color: #4557fd;
+  padding: 15px;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.containerEdu ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerEdu h2 {
+  color: white;
+  font-size: 25pt;
+}
+
+.containerEdu p {
+  color: white;
+}
+
 .contactLinks img:hover {
   opacity: 0.6;
   transition: ease-in-out 300ms;
