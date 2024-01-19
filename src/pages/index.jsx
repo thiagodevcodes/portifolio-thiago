@@ -34,6 +34,7 @@ export default function Home() {
     <>
       <Head>
         <title>Portifolio - Thiago Silva</title>
+        <link rel="icon" href="/img/tag-html.png" type="image/x-icon"></link>
       </Head>
       <Header>
         { larguraDaTela > 915 ? <Nav/> : <MobileButton setActive={setActive} active={active}/> }   
