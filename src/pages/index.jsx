@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Head from 'next/head';
 import Nav from "@/components/Nav";
 import Section from "@/components/Section";
 import Link from "next/link";
@@ -31,6 +32,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Portifolio - Thiago Silva</title>
+      </Head>
       <Header>
         { larguraDaTela > 915 ? <Nav/> : <MobileButton setActive={setActive} active={active}/> }   
       </Header>
