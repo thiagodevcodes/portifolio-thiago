@@ -81,7 +81,7 @@ export default function Home() {
             <CardTech href={"https://github.com/thiagodevcodes/ytdownloader"} title="YouTube Downloader" description="Uma aplicação web para baixar vídeos ou músicas do YouTube utilizando HTML, CSS e JavaScript/NodeJS."/>
             <CardTech href={"https://github.com/thiagodevcodes/netflix"} title="Clone Página Netflix" description="Um clone da landing page da Netflix criado somente com HTML e CSS."/>
             <CardTech href={"https://github.com/thiagodevcodes/orcamento-publico"} title="Sistema de Orçamento" description="Uma aplicação web para orçamentos públicos feita com Java, Spring Boot, React e NextJS."/>
-            <CardTech href={"https://github.com/thiagodevcodes/portifolio-thiago"} title="Portifólio" description="Um portifolio de apresentação utilizando NextJS e React."/>
+            <CardTech href={"https://github.com/thiagodevcodes/portifolio-thiago"} title="Portifólio" description="Um portifolio de apresentação utilizando as tecnologias de front-end NextJS, React, JavaScript e CSS."/>
           </div>
         </div>
       </Section>
