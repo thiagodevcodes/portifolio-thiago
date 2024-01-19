@@ -1,0 +1,13 @@
+.line {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}

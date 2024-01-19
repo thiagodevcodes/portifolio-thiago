@@ -1,0 +1,42 @@
+.nav {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+
+}
+
+.nav ul li {
+    list-style-type: none;
+    color: white;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    height: 100%;
+}
+
+.nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 12pt;
+    height: 100%;
+}
+
+.nav ul li:hover {
+    border-bottom: 3px solid #4557fd;
+    transition: 0.3s ease-in-out ;
+}

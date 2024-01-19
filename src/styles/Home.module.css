@@ -1,0 +1,119 @@
+.img {
+  border-radius: 50%;
+  border: 7px solid #4557fd;
+}
+
+
+.containerAbout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+
+.containerAbout p {
+  width: 400px;
+  color: white;
+  font-size: 15pt;
+}
+
+.colorBlue {
+  color: #4557fd;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.containerTech {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerTech > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:  wrap;
+}
+
+.containerTech img {
+  margin: 15px;
+}
+
+.containerProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.containerProject > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.containerContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.contactTexts  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.containerContact h2 {
+  color: white;
+  font-size: 25pt;
+  margin-bottom: 10px;
+}
+
+.containerContact p {
+  color: white;
+}
+
+.contactLinks a {
+  margin: 5px;
+}
+
+.contactLinks img:hover {
+  opacity: 0.6;
+  transition: ease-in-out 300ms;
+}
+
+@media only screen and (max-width: 915px) {
+  .containerAbout h2 {
+    text-align: center;
+  }
+
+  .containerAbout p {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .containerAbout {
+    gap: 30px;
+  }
+
+  .img {
+    margin-top: 40px;
+  }
+}
