@@ -44,7 +44,7 @@ export default function Home() {
       
       <Section id="about" color="#1b1b1b" height={larguraDaTela > 915 ? "100vh" : null}>
         <div className={styles.containerAbout}>
-          <Image alt="" className={styles.img} width={300} height={300} src="/img/foto.jpg" priority/>
+          <Image alt="foto de thiago" className={styles.img} width={300} height={300} src="/img/foto.jpg" priority/>
           <div className={styles.aboutTexts}>
             <h2 className={styles.colorBlue}>OLÁ, SOU</h2>
             <h2 className={styles.colorWhite}>THIAGO SILVA RODRIGUES</h2>
@@ -65,7 +65,7 @@ export default function Home() {
           <br />
           <ul>
             <li>
-            <Image alt="" width={100} height={100} src={"/img/internet.png"}></Image>
+            <Image alt="imagem de um celular conectado a internet" width={100} height={100} src={"/img/internet.png"}></Image>
               <p><strong>Informática para Internet</strong></p>
               <p>Curso Técnico</p>
               <p>C.E.E.P. José Figueireiro Barreto</p>
@@ -73,7 +73,7 @@ export default function Home() {
             </li>
 
             <li>
-              <Image alt="" width={100} height={100} src={"/img/computer.png"}></Image>
+              <Image alt="imagem de um computador" width={100} height={100} src={"/img/computer.png"}></Image>
               <p><strong>Análise e Desenvolvimeto de Sistemas</strong></p>  
               <p>Curso Superior</p>
               <p>Instituto Federal de Sergipe</p>
@@ -87,13 +87,15 @@ export default function Home() {
         <div className={styles.containerTech}>
           <h2 className={styles.colorWhite} style={{fontSize: "25pt"}} >Tecnologias</h2>
           <div>          
-            <Image alt="" width={70} height={70} src="/img/html-5.png"/> 
-            <Image alt="" width={70} height={70} src="/img/css-3.png"/>
-            <Image alt="" width={70} height={70} src="/img/js.png"/>
-            <Image alt="" width={70} height={70} src="/img/nodejs.png"/>
-            <Image alt="" width={70} height={70} src="/img/java.png"/>
-            <Image alt="" width={70} height={70} src="/img/mysql.png"/>
-            <Image alt="" width={70} height={70} src="/img/spring.png"/> 
+            <Image alt="logo html" width={70} height={70} src="/img/html-5.png"/> 
+            <Image alt="logo css" width={70} height={70} src="/img/css-3.png"/>
+            <Image alt="logo javascript" width={70} height={70} src="/img/js.png"/>
+            <Image alt="logo react" width={70} height={70} src="/img/react.png"/>
+            <Image alt="logo nextjs" width={70} height={70} src="/img/next.png"/>
+            <Image alt="logo nodejs" width={70} height={70} src="/img/nodejs.png"/>
+            <Image alt="logo java" width={70} height={70} src="/img/java.png"/>
+            <Image alt="logo spring" width={70} height={70} src="/img/spring.png"/> 
+            <Image alt="logo mysql" width={70} height={70} src="/img/mysql.png"/>
           </div>
         </div>
       </Section>
@@ -120,13 +122,13 @@ export default function Home() {
 
           <div className={styles.contactLinks}>
             <Link target="_blank" href="https://github.com/thiagodevcodes">
-              <Image alt="" width={50} height={50} src="/img/github.png" />
+              <Image alt="link do repositório do github" width={50} height={50} src="/img/github.png" />
             </Link>
             <Link target="_blank" href="https://wa.me/5579988674823">
-              <Image alt="" width={50} height={50} src="/img/whatsapp.png" />
+              <Image alt="contato via whatsapp" width={50} height={50} src="/img/whatsapp.png" />
             </Link>
             <Link target="_blank" href="https://www.linkedin.com/in/thiagosilvaweb/">
-              <Image alt="" width={50} height={50} src="/img/linkedin.png" />
+              <Image alt="link do perfil no linkedin" width={50} height={50} src="/img/linkedin.png" />
             </Link>     
           </div>
         </div>
