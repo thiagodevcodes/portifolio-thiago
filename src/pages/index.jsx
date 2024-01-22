@@ -103,11 +103,28 @@ export default function Home() {
       <Section id="project" color="#1b1b1b" flexDirection={"column"}>
         <div className={styles.containerProject}>
           <h2 className={styles.colorWhite} style={{fontSize: "25pt" }}>Projetos</h2>
-          <div>     
-            <CardTech href={"https://github.com/thiagodevcodes/ytdownloader"} title="YouTube Downloader" description="Uma aplicação web para baixar vídeos ou músicas do YouTube utilizando HTML, CSS e JavaScript/NodeJS."/>
-            <CardTech href={"https://github.com/thiagodevcodes/netflix"} title="Clone Página Netflix" description="Um clone da landing page da Netflix criado somente com HTML e CSS."/>
-            <CardTech href={"https://github.com/thiagodevcodes/orcamento-publico"} title="Sistema de Orçamento" description="Uma aplicação web para orçamentos públicos feita com Java, Spring Boot, React e NextJS."/>
-            <CardTech href={"https://github.com/thiagodevcodes/portifolio-thiago"} title="Portifólio" description="Um portifolio de apresentação utilizando as tecnologias de front-end NextJS, React, JavaScript e CSS."/>
+          <div> 
+            <CardTech img="/img/tela-netflix.png" title="Clone Página Netflix" description="Um clone da landing page da Netflix criado somente com HTML e CSS.">
+              <div>
+                <Link target="_blank" href="https://github.com/thiagodevcodes/netflix">Código Fonte</Link>
+                <Link target="_blank" href="https://streamnetclone.netlify.app/">Acessar</Link>
+              </div>
+            </CardTech>
+
+            <CardTech img="/img/tela-orcamento.png" title="Sistema de Orçamento" description="Uma aplicação web para orçamentos públicos feita com Java, Spring Boot, React e NextJS.">
+              <div>
+                <Link target="_blank" href="https://github.com/thiagodevcodes/orcamento-publico">Código Fonte</Link>
+                <Link target="_blank" href="https://orcamento-publico.vercel.app/">Acessar</Link>
+              </div> 
+            </CardTech>
+
+            <CardTech img="/img/tela-portfolio.png" title="Portifólio" description="Um portifolio de apresentação utilizando as tecnologias de front-end NextJS, React, JavaScript e CSS.">
+              <div>
+                <Link target="_blank" href="https://github.com/thiagodevcodes/portifolio-thiago">Código Fonte</Link>
+                <Link target="_blank" href="https://thiagodev.vercel.app/">Acessar</Link>
+              </div>
+
+            </CardTech>
           </div>
         </div>
       </Section>
