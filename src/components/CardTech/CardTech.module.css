@@ -49,9 +49,23 @@
     transition: 300ms ease-in-out;
 }
 
-@media only screen and (max-width: 915px) {
+@media only screen and (max-width: 500px) {
     .container {
-        height: 350px;
+        height: 320px;
+        width: 200px;
     }    
+
+    .container div h2 {
+        text-align: center;
+        font-size: 12pt;
+        margin-bottom: 10px;
+    }
+
+    .container div p {
+        text-align: center;
+        font-size: 10pt;
+    }
 }
+
+
   
