@@ -48,3 +48,10 @@
     background-color: #313da7;
     transition: 300ms ease-in-out;
 }
+
+@media only screen and (max-width: 915px) {
+    .container {
+        height: 350px;
+    }    
+}
+  

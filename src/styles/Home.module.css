@@ -133,6 +133,29 @@
   transition: ease-in-out 300ms;
 }
 
+/*Slider*/
+
+.itemSlide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.sliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px;
+  gap: 30px;
+}
+
+.slider {
+  width: 100%;
+}
+
 @media only screen and (max-width: 915px) {
   .containerAbout h2 {
     text-align: center;
@@ -151,3 +174,4 @@
     margin-top: 40px;
   }
 }
+

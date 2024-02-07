@@ -24,3 +24,15 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.slick-slider {
+  margin: 10px;
+}
+
+.slick-next:before, .slick-prev:before {
+  font-size: 30px;
+}
+
+.slick-prev {
+  left: -38px;
+}
