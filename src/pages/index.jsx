@@ -160,6 +160,15 @@ export default function Home() {
                     </div>
                   </CardTech>
                 </div>
+
+                <div className={styles.itemSlide}>
+                  <CardTech img="/img/tela-viagem.png" title="Mundi Viagens" description="Uma landing page com slider utilizando ReactJS + Vite, HTML, JavaScript e CSS.">
+                    <div>
+                      <Link target="_blank" href="https://github.com/thiagodevcodes/landing-viagem">Código Fonte</Link>
+                      <Link target="_blank" href="https://landing-viagem.vercel.app/">Acessar</Link>
+                    </div>
+                  </CardTech>
+                </div>
               </Slider>
             </div>
           </div>
