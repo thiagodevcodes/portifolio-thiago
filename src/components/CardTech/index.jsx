@@ -25,7 +25,7 @@ export default function CardTech({ title, description, img, children}) {
     return (
         <div className={styles.container}>
             <div>
-                {larguraDaTela > 500 ? <Image alt="" width={250} height={120} src={img}/> : null }
+                <Image alt="" width={250} height={120} src={img}/>
                 
                 <h2>{title}</h2>
                 <p>{description}</p>

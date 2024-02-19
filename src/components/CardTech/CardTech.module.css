@@ -51,8 +51,8 @@
 
 @media only screen and (max-width: 500px) {
     .container {
-        height: 320px;
-        width: 200px;
+        height: 420px;
+        width: 220px;
     }    
 
     .container div h2 {
@@ -64,6 +64,10 @@
     .container div p {
         text-align: center;
         font-size: 10pt;
+    }
+
+    .container img {
+        width: 180px;
     }
 }
 

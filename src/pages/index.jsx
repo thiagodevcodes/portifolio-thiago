@@ -132,8 +132,8 @@ export default function Home() {
               <br />
               <ProgressBar percent="50%" title="Java"/>
               <ProgressBar percent="50%" title="Spring Boot"/>
-              <ProgressBar percent="60%" title="NodeJS"/>
-              <ProgressBar percent="40%" title="ExpressJS"/>
+              <ProgressBar percent="70%" title="NodeJS"/>
+              <ProgressBar percent="70%" title="ExpressJS"/>
 
             </div>
             
