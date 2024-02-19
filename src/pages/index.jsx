@@ -71,7 +71,7 @@ export default function Home() {
 
       {larguraDaTela < 915 && <MobileMenu setActive={setActive} active={active} />}
 
-      <Section id="about" color="#1b1b1b">
+      <Section id="about" color="#1b1b1b" height={larguraDaTela > 915 ? "100vh" : "100%"}>
         <div className={styles.containerAbout}>
           <Image alt="foto de thiago" className={styles.img} width={300} height={300} src="/img/foto.jpg" priority />
           <div className={styles.aboutTexts}>
