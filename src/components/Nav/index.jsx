@@ -6,16 +6,16 @@ export default function Nav() {
         <nav className={styles.nav}>
             <ul>
                 <li>
-                    <Link smooth={true} duration={500} to="about">Sobre</Link>
+                    <Link smooth={true} duration={500} to="about" offset={-30} >Sobre</Link>
                 </li>
                 <li>
-                    <Link smooth={true} duration={500} to="tech">Tecnologias</Link>
+                    <Link smooth={true} duration={500} to="tech" offset={-30} >Tecnologias</Link>
                 </li>
                 <li>
-                    <Link smooth={true} duration={500} to="project">Projetos</Link>
+                    <Link smooth={true} duration={500} to="project" offset={-30} >Projetos</Link>
                 </li>
                 <li>
-                    <Link smooth={true} duration={500} to="contact">Contato</Link>
+                    <Link smooth={true} duration={500} to="contact" offset={-30} >Contato</Link>
                 </li>
             </ul>
         </nav>

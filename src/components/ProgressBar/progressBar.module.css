@@ -1,0 +1,30 @@
+.progressContainer {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .progressTexts {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .progress {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .progressBar {
+    width: 0;
+    height: 10px;
+    background-color: #4557fd;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+  }
+  

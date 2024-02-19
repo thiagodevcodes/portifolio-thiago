@@ -5,6 +5,7 @@ import Section from "@/components/Section";
 import Link from "next/link";
 import CardTech from "@/components/CardTech";
 import MobileButton from "@/components/MobileButton";
+import ProgressBar from "@/components/ProgressBar";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
@@ -70,7 +71,7 @@ export default function Home() {
 
       {larguraDaTela < 915 && <MobileMenu setActive={setActive} active={active} />}
 
-      <Section id="about" color="#1b1b1b" height={larguraDaTela > 915 ? "100vh" : null}>
+      <Section id="about" color="#1b1b1b">
         <div className={styles.containerAbout}>
           <Image alt="foto de thiago" className={styles.img} width={300} height={300} src="/img/foto.jpg" priority />
           <div className={styles.aboutTexts}>
@@ -111,67 +112,79 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section id="tech" color="black" flexDirection={"column"}>
+      <Section color="black" id={"tech"}>
         <div className={styles.containerTech}>
-          <h2 className={styles.colorWhite} style={{ fontSize: "25pt" }} >Tecnologias</h2>
-          <div>
-            <Image alt="logo html" width={70} height={70} src="/img/html-5.png" />
-            <Image alt="logo css" width={70} height={70} src="/img/css-3.png" />
-            <Image alt="logo javascript" width={70} height={70} src="/img/js.png" />
-            <Image alt="logo react" width={70} height={70} src="/img/react.png" />
-            <Image alt="logo nextjs" width={70} height={70} src="/img/next.png" />
-            <Image alt="logo nodejs" width={70} height={70} src="/img/nodejs.png" />
-            <Image alt="logo java" width={70} height={70} src="/img/java.png" />
-            <Image alt="logo spring" width={70} height={70} src="/img/spring.png" />
-            <Image alt="logo mysql" width={70} height={70} src="/img/mysql.png" />
+          <h2 className={styles.colorWhite}>Tecnologias</h2>
+
+          <div className={styles.containerBar}>
+            <div className={styles.techGraphic}>
+              <h2>Front-end</h2>
+              <br />
+              <ProgressBar percent="70%" title="JavaScript"/>
+              <ProgressBar percent="80%" title="CSS"/>
+              <ProgressBar percent="90%" title="HTML"/>
+              <ProgressBar percent="60%" title="ReactJS"/>
+              <ProgressBar percent="40%" title="NextJS"/>
+            </div>
+
+            <div className={styles.techGraphic}>
+              <h2>Back-end</h2>
+              <br />
+              <ProgressBar percent="50%" title="Java"/>
+              <ProgressBar percent="50%" title="Spring Boot"/>
+              <ProgressBar percent="60%" title="NodeJS"/>
+              <ProgressBar percent="40%" title="ExpressJS"/>
+
+            </div>
+            
           </div>
         </div>
       </Section>
 
-      <section id="project" style={{backgroundColor: "#1b1b1b"}}>
-          <div className={styles.sliderContainer}>
+      <section id="project" style={{ backgroundColor: "#1b1b1b" }}>
+        <div className={styles.sliderContainer}>
           <h2 className={styles.colorWhite} style={{ fontSize: "25pt" }} >Projetos</h2>
 
-            <div className={styles.slider}>
-              <Slider {...settings}>
-                <div className={styles.itemSlide}>
-                  <CardTech img="/img/tela-netflix.png" title="Clone Página Netflix" description="Um clone da landing page da Netflix criado somente com HTML e CSS.">
-                    <div>
-                      <Link target="_blank" href="https://github.com/thiagodevcodes/netflix">Código Fonte</Link>
-                      <Link target="_blank" href="https://streamnetclone.netlify.app/">Acessar</Link>
-                    </div>
-                  </CardTech>
-                </div>
+          <div className={styles.slider}>
+            <Slider {...settings}>
+              <div className={styles.itemSlide}>
+                <CardTech img="/img/tela-netflix.png" title="Clone Página Netflix" description="Um clone da landing page da Netflix criado somente com HTML e CSS.">
+                  <div>
+                    <Link target="_blank" href="https://github.com/thiagodevcodes/netflix">Código Fonte</Link>
+                    <Link target="_blank" href="https://streamnetclone.netlify.app/">Acessar</Link>
+                  </div>
+                </CardTech>
+              </div>
 
-                <div className={styles.itemSlide}>
-                  <CardTech img="/img/tela-orcamento.png" title="Sistema de Orçamento" description="Uma aplicação web para orçamentos públicos feita com Java, Spring Boot, React e NextJS.">
-                    <div>
-                      <Link target="_blank" href="https://github.com/thiagodevcodes/orcamento-publico">Código Fonte</Link>
-                      <Link target="_blank" href="https://orcamento-publico.vercel.app/">Acessar</Link>
-                    </div>
-                  </CardTech>
-                </div>
+              <div className={styles.itemSlide}>
+                <CardTech img="/img/tela-orcamento.png" title="Sistema de Orçamento" description="Uma aplicação web para orçamentos públicos feita com Java, Spring Boot, React e NextJS.">
+                  <div>
+                    <Link target="_blank" href="https://github.com/thiagodevcodes/orcamento-publico">Código Fonte</Link>
+                    <Link target="_blank" href="https://orcamento-publico.vercel.app/">Acessar</Link>
+                  </div>
+                </CardTech>
+              </div>
 
-                <div className={styles.itemSlide}>
-                  <CardTech img="/img/tela-portfolio.png" title="Portifólio" description="Um portifolio utilizando as tecnologias de front-end NextJS, React, JavaScript e CSS.">
-                    <div>
-                      <Link target="_blank" href="https://github.com/thiagodevcodes/portifolio-thiago">Código Fonte</Link>
-                      <Link target="_blank" href="https://thiagodev.vercel.app/">Acessar</Link>
-                    </div>
-                  </CardTech>
-                </div>
+              <div className={styles.itemSlide}>
+                <CardTech img="/img/tela-portfolio.png" title="Portifólio" description="Um portifolio utilizando as tecnologias de front-end NextJS, React, JavaScript e CSS.">
+                  <div>
+                    <Link target="_blank" href="https://github.com/thiagodevcodes/portifolio-thiago">Código Fonte</Link>
+                    <Link target="_blank" href="https://thiagodev.vercel.app/">Acessar</Link>
+                  </div>
+                </CardTech>
+              </div>
 
-                <div className={styles.itemSlide}>
-                  <CardTech img="/img/tela-viagem.png" title="Mundi Viagens" description="Uma landing page com slider utilizando ReactJS + Vite, HTML, JavaScript e CSS.">
-                    <div>
-                      <Link target="_blank" href="https://github.com/thiagodevcodes/landing-viagem">Código Fonte</Link>
-                      <Link target="_blank" href="https://landing-viagem.vercel.app/">Acessar</Link>
-                    </div>
-                  </CardTech>
-                </div>
-              </Slider>
-            </div>
+              <div className={styles.itemSlide}>
+                <CardTech img="/img/tela-viagem.png" title="Mundi Viagens" description="Uma landing page com slider utilizando ReactJS + Vite, HTML, JavaScript e CSS.">
+                  <div>
+                    <Link target="_blank" href="https://github.com/thiagodevcodes/landing-viagem">Código Fonte</Link>
+                    <Link target="_blank" href="https://landing-viagem.vercel.app/">Acessar</Link>
+                  </div>
+                </CardTech>
+              </div>
+            </Slider>
           </div>
+        </div>
 
       </section>
 
@@ -180,7 +193,7 @@ export default function Home() {
           <div className={styles.contactTexts}>
             <h2>Contato</h2>
             <p>E-mail: euthiagosrodrigues@gmail.com</p>
-            <p>Telefone: +55 79 98867-4823</p>
+            <p>Telefone: +55 (79) 98867-4823</p>
           </div>
 
           <div className={styles.contactLinks}>
