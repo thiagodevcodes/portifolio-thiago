@@ -52,7 +52,7 @@
 @media only screen and (max-width: 500px) {
     .container {
         height: 420px;
-        width: 220px;
+        width: 240px;
     }    
 
     .container div h2 {
@@ -68,6 +68,7 @@
 
     .container img {
         width: 180px;
+        height: 100px;
     }
 }
 
