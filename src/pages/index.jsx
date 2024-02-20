@@ -78,7 +78,7 @@ export default function Home() {
             <h2 className={styles.colorBlue}>OLÁ, SOU</h2>
             <h2 className={styles.colorWhite}>THIAGO SILVA RODRIGUES</h2>
             <h2 className={styles.colorBlue}>DESENVOLVEDOR WEB</h2>
-            <p>Sou amante da área da tecnologia e este é meu portifólio com
+            <p>Sou entusiasta da área da tecnologia e este é meu portifólio com
               alguns mini projetos que desenvolvi, me formei recentemente em análise e desenvolvimento de sistemas, estou sempre buscando evoluir na área e
               tenho disposição para aprender e seguir aprimorando meus conhecimentos,
               atualmente com foco no desenvolvimento web e estou à procura de uma oportunidade.
