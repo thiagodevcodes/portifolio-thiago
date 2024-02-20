@@ -59,7 +59,7 @@ export default function Home() {
   }, [])
 
   return (
-    <>
+    <div className="fade-in">
       <Head>
         <title>Portifolio - Thiago Silva</title>
         <link rel="icon" href="/img/tag-html.png" type="image/x-icon"></link>
@@ -209,6 +209,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-    </>
+    </div>
   )
 }

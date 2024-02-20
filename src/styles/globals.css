@@ -40,3 +40,17 @@ html {
 .slick-prev {
   left: -38px;
 }
+
+.fade-in {
+  opacity: 0; /* Inicia com opacidade 0 */
+  animation: fadeInAnimation 1s ease-in forwards; /* Aplica a animação fadeInAnimation */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0; /* Opacidade inicial 0 */
+  }
+  to {
+    opacity: 1; /* Opacidade final 1 */
+  }
+}
