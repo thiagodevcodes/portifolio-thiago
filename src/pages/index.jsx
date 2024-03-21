@@ -166,7 +166,7 @@ export default function Home() {
               </div>
 
               <div className={styles.itemSlide}>
-                <CardTech img="/img/tela-portfolio.png" title="Portifólio" description="Um portifolio utilizando as tecnologias de front-end NextJS, React, JavaScript e CSS.">
+                <CardTech img="/img/tela-portfolio.png" title="Portfólio" description="Um portfólio utilizando as tecnologias de front-end NextJS, React, JavaScript e CSS.">
                   <div>
                     <Link target="_blank" href="https://github.com/thiagodevcodes/portifolio-thiago">Código Fonte</Link>
                     <Link target="_blank" href="https://thiagodev.vercel.app/">Acessar</Link>
