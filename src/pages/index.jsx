@@ -61,7 +61,7 @@ export default function Home() {
   return (
     <div className="fade-in">
       <Head>
-        <title>Portifolio - Thiago Silva</title>
+        <title>Portfólio - Thiago Silva</title>
         <link rel="icon" href="/img/tag-html.png" type="image/x-icon"></link>
       </Head>
 
